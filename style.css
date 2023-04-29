@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background: rgba(244, 244, 244, 0.8);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav {
+  background: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #444;
+  transition: background 0.3s;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+/*
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+*/
+
+h1,
+h2 {
+  color: #4a148c;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/*ここまで*/
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+/*
+.sns-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-icons a {
+  color: #4a148c;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.sns-icons a:hover {
+  color: #7c43bd;
+}*/
+/*追加：SNSリンクのスタイル*/
+.sns-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-icons a {
+  color: #4a148c;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.sns-icons a:hover {
+  color: #7c43bd;
+}
+
+footer {
+  background: #333;
+  color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9アスペクト比 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 追加：スライドショーのスタイル */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* 追加：ニュースレターサインアップのスタイル */
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter-email {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+  transition: background-color 0.3s;
+}
+
+/* スマホ対応 */
+/*@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .sns-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+  }
+}*/
